@@ -1,0 +1,13 @@
+# Definir la función
+def signo_numero(x):
+    if x < 0:
+        return "El numero es negativo"
+    elif x == 0:
+        return "El numero es cero"
+    else:
+        return "El numero es positivo"
+
+# Casos de prueba
+print(signo_numero(-5.2))  # El numero es negativo
+print(signo_numero(0.0))   # El numero es cero
+print(signo_numero(3.7))   # El numero es positivo
