@@ -1,0 +1,9 @@
+import numpy as np
+
+def impares(a):
+    # Convertimos los números a enteros y verificamos si son impares con módulo 2
+    return np.sum(a.astype(int) % 2 == 1)
+
+# Casos de prueba
+print("impares(np.arange(100)) =", impares(np.arange(100)))
+print("impares(np.arange(2, 100, 2)) =", impares(np.arange(2, 100, 2)))
