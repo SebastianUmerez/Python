@@ -1,0 +1,9 @@
+def suma_positivos(lista):
+    suma = 0
+    for num in lista:
+        if num > 0:
+            suma += num
+    return suma
+print(suma_positivos([1, -2, 3, -4, 5]))   # 9
+print(suma_positivos([-7, -9, -11]))       # 0
+print(suma_positivos([10, 20, 30]))        # 60
