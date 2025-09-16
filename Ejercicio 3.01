@@ -1,0 +1,18 @@
+import math
+
+x = 10
+y = 3
+
+# Asignaciones
+u = x + y         # suma
+v = x * y         # multiplicación
+w = math.sin(x)   # seno de x
+y = math.sqrt(x)  # raíz cuadrada de x
+z = math.log(x)   # logaritmo natural de x
+
+# Imprimir resultados
+print("u =", u)
+print("v =", v)
+print("w =", w)
+print("y =", y)
+print("z =", z)
