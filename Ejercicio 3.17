@@ -1,0 +1,8 @@
+import numpy as np
+
+M = np.array([-1, 0, 1, 2, 0, 3])
+
+# Seleccionar solo los elementos mayores que cero
+resultado = M[M > 0]
+
+print(resultado)
