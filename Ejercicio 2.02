@@ -1,0 +1,11 @@
+# Calcular el área de un triángulo
+
+# Datos del triángulo
+base = 10
+altura = 12
+
+# Fórmula del área
+area = (base * altura) / 2
+
+# Imprimir el resultado
+print("El área del triángulo es:", area)
