@@ -1,0 +1,13 @@
+# Definir la función
+def mi_max(x):
+    # Suponemos que la lista tiene al menos un elemento
+    max_val = x[0]
+    for valor in x:
+        if valor > max_val:
+            max_val = valor
+    return max_val
+
+# Casos de prueba
+print(mi_max([3, 5, 2, 8, 1]))      # 8
+print(mi_max([-2, -5, -1, -9]))     # -1
+print(mi_max([10]))                  # 10
