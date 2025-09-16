@@ -1,0 +1,9 @@
+while True:
+    texto = input("Introduce un texto sin mayúsculas: ")
+    # Verificar si hay alguna letra mayúscula
+    if any(c.isupper() for c in texto):
+        print("Error: el texto contiene letras mayúsculas. Intenta nuevamente.")
+    else:
+        break
+
+print(f"Texto válido ingresado: {texto}")
