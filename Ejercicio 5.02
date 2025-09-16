@@ -1,0 +1,16 @@
+# Definir la función
+def masJoven(lista1, lista2):
+    nombre1, edad1 = lista1
+    nombre2, edad2 = lista2
+    
+    if edad1 < edad2:
+        return f"{nombre1} es más joven que {nombre2}"
+    elif edad2 < edad1:
+        return f"{nombre2} es más joven que {nombre1}"
+    else:
+        return f"{nombre1} y {nombre2} tienen la misma edad"
+
+# Casos de prueba
+persona1 = ['Jose', 23]
+persona2 = ['Ana', 19]
+print(masJoven(persona1, persona2))  # Ana es más joven que Jose
