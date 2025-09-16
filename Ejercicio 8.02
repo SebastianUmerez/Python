@@ -1,0 +1,14 @@
+import csv
+
+# Lista de ejemplo
+mi_lista = ["manzana", "banana", "cereza", "naranja"]
+
+# Abrir un archivo CSV en modo escritura
+with open("lista.csv", "w", newline="") as archivo:
+    escritor = csv.writer(archivo)
+    
+    # Escribir cada elemento de la lista en una fila
+    for elemento in mi_lista:
+        escritor.writerow([elemento])
+
+print("La lista se ha guardado en 'lista.csv'.")
