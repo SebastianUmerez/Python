@@ -1,0 +1,8 @@
+# Leer un número entero del usuario
+n = int(input("Introduce un número entero: "))
+
+# Verificar si es par o impar
+if n % 2 == 0:
+    print("es par")
+else:
+    print("es impar")
