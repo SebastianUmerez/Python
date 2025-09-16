@@ -1,0 +1,18 @@
+# Definir la función
+def dentro_de_triangulo(x, y):
+    # Comprobar si está fuera
+    if x < 0 or y < 0 or x + y > 1:
+        return 'fuera'
+    # Comprobar si está en el borde
+    elif x == 0 or y == 0 or x + y == 1:
+        return 'borde'
+    # Si no está fuera ni en el borde, está dentro
+    else:
+        return 'dentro'
+
+# Casos de prueba
+print(dentro_de_triangulo(0.5, 0.2))  # dentro
+print(dentro_de_triangulo(0, 0.5))    # borde
+print(dentro_de_triangulo(1, 0))      # borde
+print(dentro_de_triangulo(-0.1, 0.5)) # fuera
+print(dentro_de_triangulo(0.5, 0.6))  # fuera
