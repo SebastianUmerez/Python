@@ -1,0 +1,15 @@
+import numpy as np
+
+# Pedir datos al usuario
+a = float(input("Introduce el valor del lado a (en metros): "))
+b = float(input("Introduce el valor del lado b (en metros): "))
+angulo_grados = float(input("Introduce el ángulo entre los lados (en grados): "))
+
+# Convertir grados a radianes
+angulo_radianes = np.radians(angulo_grados)
+
+# Calcular área
+A = 0.5 * a * b * np.sin(angulo_radianes)
+
+# Mostrar resultado
+print(f"El área del triángulo es: {A:.4f} m²")
