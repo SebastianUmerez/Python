@@ -1,0 +1,16 @@
+suma_positivos = 0
+contador_negativos = 0
+
+print("Introduce números. Ingresa -9999 para terminar.")
+
+while True:
+    n = float(input("Número: "))
+    if n == -9999:
+        break
+    if n > 0:
+        suma_positivos += n
+    elif n < 0:
+        contador_negativos += 1
+
+print(f"Suma de números positivos: {suma_positivos}")
+print(f"Número de números negativos: {contador_negativos}")
