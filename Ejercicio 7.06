@@ -1,0 +1,12 @@
+# Inicializar la suma
+suma = 0
+
+print("Introduce números para sumarlos. Ingresa -9999 para terminar.")
+
+while True:
+    n = float(input("Número: "))
+    if n == -9999:
+        break
+    suma += n
+
+print(f"La suma de los números ingresados es: {suma}")
