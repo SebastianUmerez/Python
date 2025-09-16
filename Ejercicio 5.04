@@ -1,0 +1,26 @@
+# Definir la función
+def operaciones(a, b, operacion):
+    if operacion == 'mas':
+        return a + b
+    if operacion == 'menos':
+        return a - b
+    if operacion == 'mult':
+        return a * b
+    if operacion == 'div':
+        if b != 0:
+            return a / b
+        else:
+            return "Error: división por cero"
+    if operacion == 'pot':
+        return a ** b
+    else:
+        return "Operación no válida"
+
+# Casos de prueba
+print(operaciones(5, 3, 'mas'))   # 8
+print(operaciones(5, 3, 'menos')) # 2
+print(operaciones(5, 3, 'mult'))  # 15
+print(operaciones(5, 3, 'div'))   # 1.666...
+print(operaciones(5, 3, 'pot'))   # 125
+print(operaciones(5, 0, 'div'))   # Error: división por cero
+print(operaciones(5, 3, 'xyz'))   # Operación no válida
