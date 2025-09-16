@@ -1,0 +1,16 @@
+def mi_n_max(x, n):
+    salida = []
+    lista_aux = x.copy()  # copiamos la lista para no modificar la original
+    
+    for _ in range(n):
+        mayor = max(lista_aux)      # obtenemos el máximo actual
+        salida.append(mayor)        # lo agregamos a la salida
+        lista_aux.remove(mayor)     # lo quitamos de la lista auxiliar
+    
+    return salida
+
+# Ejemplo de uso
+x = [7, 9, 10, 5, 8, 3, 4, 6, 2, 1]
+n = 3
+salida = mi_n_max(x, n)
+print(salida)  # [10, 9, 8]
