@@ -1,0 +1,15 @@
+mayor = None  # Inicializamos la variable para guardar el número mayor
+
+print("Introduce números (un número negativo termina el programa).")
+
+while True:
+    n = float(input("Número: "))
+    if n < 0:
+        break
+    if (mayor is None) or (n > mayor):
+        mayor = n
+
+if mayor is not None:
+    print(f"El número mayor ingresado es: {mayor}")
+else:
+    print("No se ingresaron números positivos.")
