@@ -1,0 +1,10 @@
+import numpy as np
+
+# Definir la matriz
+Y = np.array([[3, 5, 3], [ 2, 2, 5], [3, 8, 9]])
+
+# Calcular la transpuesta
+transpuesta = Y.T
+
+print("Matriz original:\n", Y)
+print("Transpuesta:\n", transpuesta)
