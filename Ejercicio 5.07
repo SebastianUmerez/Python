@@ -1,0 +1,20 @@
+# Definir la función
+def clasificar_triangulo(a, b, c):
+    # Comprobar si es un triángulo válido
+    if (a + b <= c) or (a + c <= b) or (b + c <= a):
+        return "No es un triángulo"
+    # Equilátero: los tres lados iguales
+    elif a == b == c:
+        return "Equilátero"
+    # Isósceles: exactamente dos lados iguales
+    elif a == b or a == c or b == c:
+        return "Isósceles"
+    # Escaleno: todos los lados diferentes
+    else:
+        return "Escaleno"
+
+# Casos de prueba
+print(clasificar_triangulo(3, 3, 3))  # Equilátero
+print(clasificar_triangulo(4, 4, 5))  # Isósceles
+print(clasificar_triangulo(3, 4, 5))  # Escaleno
+print(clasificar_triangulo(1, 2, 8))  # No es un triángulo
