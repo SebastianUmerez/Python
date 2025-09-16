@@ -1,0 +1,9 @@
+# Lista de ejemplo
+mi_lista = ["manzana", "banana", "cereza", "naranja"]
+
+# Abrir un archivo en modo escritura
+with open("lista.txt", "w") as archivo:
+    for elemento in mi_lista:
+        archivo.write(f"{elemento}\n")  # Cada elemento en una línea
+
+print("La lista se ha guardado en 'lista.txt'.")
