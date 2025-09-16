@@ -1,0 +1,13 @@
+import math
+
+def mi_cilindro(r, h):
+    # Área superficial
+    s = 2 * math.pi * r**2 + 2 * math.pi * r * h
+    # Volumen
+    v = math.pi * r**2 * h
+    # Devolver ambos en una lista
+    return [s, v]
+
+# Casos de prueba
+print("mi_cilindro(1, 5) =", mi_cilindro(1, 5))
+print("mi_cilindro(2, 4) =", mi_cilindro(2, 4))
