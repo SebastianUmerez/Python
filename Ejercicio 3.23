@@ -1,0 +1,10 @@
+import numpy as np
+
+# Definir el array
+A = np.array([12, 5, 19, 8, 3, 25, 7, 14, 9, 10])
+
+# Modificar valores entre 5 y 15 -> ponerlos en 0
+A[(A >= 5) & (A <= 15)] = 0
+
+# Mostrar array modificado
+print(A)
