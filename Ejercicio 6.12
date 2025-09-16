@@ -1,0 +1,9 @@
+def numeros_divisibles(m, n):
+    divisibles = []
+    for i in range(1, m+1):
+        if i % n == 0:
+            divisibles.append(i)
+    return divisibles
+print(numeros_divisibles(20, 4))  # [4, 8, 12, 16, 20]
+print(numeros_divisibles(15, 3))  # [3, 6, 9, 12, 15]
+print(numeros_divisibles(10, 5))  # [5, 10]
