@@ -1,0 +1,11 @@
+import math
+
+# Definir la función para convertir radianes a grados
+def radianes_a_grados(rad):
+    grados = rad * 180 / math.pi
+    return grados
+
+# Casos de prueba
+print("π rad =", radianes_a_grados(math.pi), "°")      # debería dar 180°
+print("π/2 rad =", radianes_a_grados(math.pi/2), "°")  # debería dar 90°
+print("1 rad =", radianes_a_grados(1), "°")            # ≈ 57.2958°
