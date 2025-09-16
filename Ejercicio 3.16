@@ -1,0 +1,6 @@
+import numpy as np
+
+# Generar 101 puntos desde -10 hasta 10 (inclusive)
+arr = np.linspace(-10, 10, 101)
+
+print(arr)
