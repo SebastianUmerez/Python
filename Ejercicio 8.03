@@ -1,0 +1,25 @@
+import numpy as np
+
+# Crear la matriz con los datos
+notas = np.array([
+    [2356, 2, 7],
+    [1128, 3, 6],
+    [2279, 3, 8],
+    [3689, 1, 4],
+    [1697, 2, 3],
+    [9946, 3, 9],
+    [7721, 1, 6],
+    [2684, 2, 2],
+    [6512, 3, 5],
+    [2945, 1, 10]
+])
+
+# Guardar en archivo CSV
+np.savetxt("notas.csv", notas, delimiter=",", fmt="%d", header="Legajo,Año,Nota", comments="")
+
+# Leer el archivo CSV (saltando la fila de encabezados)
+datos = np.loadtxt("notas.csv", delimiter=",", skiprows=1, dtype=int)
+
+# Mostrar la matriz leída
+print("Matriz leída desde CSV:")
+print(datos)
